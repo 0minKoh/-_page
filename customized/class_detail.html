@@ -591,21 +591,21 @@
         console.log(window.scrollY);
 
         // active 클래스 부여
-        if (window.scrollY <= DivClassTopList[1] - offset) {
+        if (window.scrollY < DivClassTopList[1] - (offset + 1)) {
           if (!navLinks[0].classList.contains("active")) {
             navLinks.forEach((navLink) => {
               navLink.classList.remove("active");
             });
             navLinks[0].classList.add("active");
           }
-        } else if (window.scrollY <= DivClassTopList[2] - offset) {
+        } else if (window.scrollY < DivClassTopList[2] - (offset + 1)) {
           if (!navLinks[1].classList.contains("active")) {
             navLinks.forEach((navLink) => {
               navLink.classList.remove("active");
             });
             navLinks[1].classList.add("active");
           }
-        } else if (window.scrollY <= DivClassTopList[3] - offset) {
+        } else if (window.scrollY < DivClassTopList[3] - (offset + 1)) {
           if (!navLinks[2].classList.contains("active")) {
             navLinks.forEach((navLink) => {
               navLink.classList.remove("active");

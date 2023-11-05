@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <base href="" />
+    <title>수파자 X 나에게 낭독</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link
+      href="../demo28/src/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../demo28/dist/assets/css/style.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.custom.css" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--end::Head-->
+  <!--begin::Body-->
+  <body>
+    <!-- begin:: header -->
+    <header
+      class="main-header navbar navbar-expand-lg fixed-top bg-white"
+      id="main-header"
+      style="margin-bottom: 40px"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="https://www.supaja.com/home_v5_20230312/image/logo.png"
+            alt=""
+            style="width: 120px"
+          />
+        </a>
+        <button
+          style="border: none"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+          <svg
+            height="32px"
+            id="Layer_1"
+            style="enable-background: new 0 0 32 32"
+            version="1.1"
+            viewBox="0 0 32 32"
+            width="32px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            />
+          </svg>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-center fs-lg-3 fs-2 bg-white">
+            <li class="nav-item">
+              <!-- href 상대경로 - 절대경로 수정필요 -->
+              <a
+                class="nav-link pe-md-8 pe-0"
+                aria-current="page"
+                href="./voice_introduction.html"
+                >소개</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- href 상대경로 - 절대경로 수정필요 -->
+              <a
+                class="nav-link pe-md-8 pe-0"
+                aria-current="page"
+                href="./index.html"
+                >클래스</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- href 로그인 경로로 이동 필요 -->
+              <a class="nav-link pe-md-8 pe-0" aria-current="page" href="#"
+                >로그인</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- href 회원가입 경로로 이동 필요 -->
+              <a class="nav-link" aria-current="page" href="#">회원가입</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- end:: header -->
+    <!-- begin:: main -->
+    <!-- data-bs-target="#subheader-scrollspy"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="bg-body-tertiary p-3 rounded-2"
+      tabindex="0" -->
+    <main style="margin-top: 60px">
+      <div class="container">
+        <!-- begin:: grid -->
+        <div class="row">
+          <!-- begin:: left-side grid -->
+          <div class="col-md-7 col-12 order-md-1 order-2">
+            <!-- begin:: main-image -->
+            <div class="mt-md-16 mt-0 w-100 d-md-block d-none">
+              <img
+                class="w-100 rounded-4"
+                src="./assets/media/img/class_thumbnails/drama_ksw.png"
+                alt=""
+              />
+            </div>
+            <!-- end:: main-image -->
+            <!-- begin:: scrollspy -->
+            <section>
+              <!-- begin:: sub-header -->
+              <ul
+                class="mt-10 nav fw-bolder bg-white"
+                id="subheader-scrollspy"
+                style="border-bottom: 0.5px solid #000; color: #a0a0a0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link class-intro" href="#class-intro"
+                    >클래스 소개</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link class-detail" href="#class-detail"
+                    >상세정보</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link class-teacher" href="#class-teacher"
+                    >강사소개</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link class-policy" href="#class-policy">정책</a>
+                </li>
+              </ul>
+              <style>
+                #subheader-scrollspy .nav-link.active {
+                  color: #5e57ec;
+                  border-bottom: 1px solid #5e57ec;
+                }
+              </style>
+              <!-- end:: sub-header -->
+              <!-- begin:: scroll-contents -->
+              <div>
+                <!-- begin:: 클래스 소개 -->
+                <div class="py-8" id="class-intro">
+                  <div class="fs-3 mb-5 fw-bolder">클래스 소개</div>
+                  <div class="fs-6">
+                    이런 수강생에게 추천해요! <br />
+                    - 이제 갓 달리기를 시작한 런린이 <br />
+                    - 달리기 자세를 교정하고 싶은 초보러너 <br />
+                    - 달리기 통증을 느껴본 러너 <br />
+                    <br />
+                    [커리큘럼] <br />
+                    [1주차] 수업 소개 및 베어썜의 영어말하기 1000문장 (1) <br />
+                    - 토요일: 영어 말하기 학습의 중요 포인트 설명과 및 <br />
+                    - 일요일: 문장 1~25번 진행 <br />
+                    <br />
+                    [2주차] 베어썜의 영어말하기 1000문장 (2) <br />
+                    - 토요일: 문장 26~50번 진 <br />
+                    - 일요일: 문장 1~25번 복습 및 응용 <br />
+                    <br />
+                    [3주차] 베어썜의 영어말하기 1000문장 (3) <br />
+                    - 토요일: 문장 51~75번 진행 <br />
+                    - 일요일: 문장 26~50번 복습 및 응용 <br />
+                    <br />
+                    [4주차] 베어썜의 영어말하기 1000문장 (4) <br />
+                    - 토요일: 문장 76~100번 진행 <br />
+                    - 일요일: 문장 51~75번 복습 및 응용 <br />
+                  </div>
+                </div>
+                <hr />
+                <!-- end:: 클래스 소개 -->
+                <!-- begin:: 상세정보 -->
+                <div class="py-8" id="class-detail">
+                  <div class="fs-3 mb-6 fw-bolder">상세 정보</div>
+                  <div class="fs-6 row">
+                    <div class="col-3">
+                      <div class="fw-bolder mb-3">수강 기간</div>
+                      <div class="fw-bolder mb-3">클래스 스케줄</div>
+                      <div class="fw-bolder mb-3">수강 인원</div>
+                    </div>
+                    <div class="col-9">
+                      <div class="mb-3">
+                        2021년 1월 5일(화) - 2021년 3월 22일(목)
+                      </div>
+                      <div class="mb-3">
+                        주 2회 / 화,목 18:00 - 20:00 (2시간)
+                      </div>
+                      <div>총 10명</div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!-- end:: 상세정보 -->
+                <!-- begin:: 강사소개 -->
+                <div class="py-8" id="class-teacher">
+                  <div class="fs-3 mb-6 fw-bolder">강사 소개</div>
+                  <div class="d-flex align-items-center mb-6">
+                    <div class="symbol symbol-100px symbol-circle me-6">
+                      <img
+                        src="./assets/media/img/profiles/song_jeong_hee.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="fs-5">
+                      <div class="fw-bolder mb-3">홍길동</div>
+                      <div class="fs-7">
+                        제 수업은 10년 넘는 영어교육 경험을 바탕으로 여러분들께
+                        영어 말하기 학습은 어떤 식으로해야 가장 효율적이고
+                        효과적인지 알려드립니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teacher-detail fs-8">
+                    (전) 디자인 에이전시 그래픽오션 <br />
+                    (현) 디자인 스튜디오 DAPE(다프) 대표 <br />
+                    <br />
+                    - 한국관광공사_전시디자인 <br />
+                    - 선거연수원_홍보 책자 디자인 및 일러스트 <br />
+                    - 국토발전전시관_건축 설계 키트 제작/팝업카드 키트 제작
+                    <br />
+                  </div>
+                </div>
+                <hr />
+                <!-- end:: 강사소개 -->
+                <!-- begin:: 정책 -->
+                <div class="py-8" id="class-policy">
+                  <div class="fs-3 mb-6 fw-bolder">정책</div>
+                  <div
+                    class="policy px-4 py-6"
+                    style="background-color: #f9f9f9"
+                  >
+                    환불 정책 <br />
+                    취소 정책
+                  </div>
+                </div>
+                <hr />
+                <!-- end:: 정책 -->
+              </div>
+              <!-- end:: scroll-contents -->
+            </section>
+            <!-- begin:: scrollspy -->
+          </div>
+          <!-- end:: left-side grid -->
+          <!-- begin:: right-side grid -->
+          <div class="col-md-5 col-12 order-md-2 order-1">
+            <!-- begin:: main-image -->
+            <div class="mt-md-16 mt-0 w-100 d-md-none d-block">
+              <img
+                class="w-100 rounded-4"
+                src="./assets/media/img/class_thumbnails/drama_ksw.png"
+                alt=""
+              />
+            </div>
+            <!-- end:: main-image -->
+            <div
+              class="rounded-3 px-8 py-10 mt-md-16 mt-8"
+              style="border: 1px solid #000; position: sticky; top: 100px"
+            >
+              <div class="card-header">
+                <div class="teacher fs-6 fw-light mb-4">강사 홍길동</div>
+                <div class="title fs-3 fw-bolder">
+                  영어교육의 1인자, 영토끼쌤의 영어회화수업! 블라블라합니다.
+                </div>
+              </div>
+              <div
+                class="border-dahsed-bottom my-md-8 my-6"
+                style="border-bottom: 1px dashed #000"
+              ></div>
+              <div class="card-body fs-md-5 fs-7">
+                <div class="d-flex justify-content-between">
+                  <div class="info-title fw-bolder">
+                    <div class="mb-3">수강 기간</div>
+                    <div class="mb-3">강의 스케줄</div>
+                    <div class="mb-3">수강 인원</div>
+                  </div>
+                  <div class="info-contents fw-light text-end">
+                    <div class="mb-3">23년 1월 5일(화) - 23년 3월 22일(목)</div>
+                    <div class="mb-3">주 2회 / 화,목 18:00 - 20:00 (2시간)</div>
+                    <div class="mb-3">5 / 10명</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-dahsed-bottom my-md-8 my-6"
+                style="border-bottom: 1px dashed #000"
+              ></div>
+              <div class="card-footer fs-md-5 fs-6">
+                <div class="d-flex justify-content-between">
+                  <div class="info-title fw-bolder">
+                    <div class="mb-3">무이자 3개월</div>
+                    <div class="mb-3">총 수강료</div>
+                  </div>
+                  <div class="info-contents fw-bolder text-end">
+                    <div class="mb-3">월 99,990원</div>
+                    <div class="mb-3 fs-3">999,999,999원</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="btn btn-primary d-md-block d-none mt-10 w-100 py-6 fs-3 fw-bolder"
+              >
+                클래스 신청하기
+              </div>
+            </div>
+          </div>
+          <!-- end:: right-side grid -->
+        </div>
+        <!-- end:: grid -->
+      </div>
+
+      <!-- begin:: bottom-sticky(only mobile) -->
+      <div class="d-md-none d-block fixed-bottom">
+        <div class="btn btn-primary w-100 fs-2 py-6" style="border-radius: 0">
+          클래스 신청하기
+        </div>
+      </div>
+      <!-- end:: bottom-sticky(only mobile) -->
+
+      <!--begin:: side-sticky -->
+      <div
+        class="side-sticky position-fixed"
+        style="
+          width: 150px;
+          height: 300px;
+          right: 14px;
+          bottom: 218px;
+          z-index: 999;
+        "
+      >
+        <!-- begin:: PC -->
+        <div class="d-flex flex-column align-content-center text-center">
+          <a
+            href="http://pf.kakao.com/_EFDTM/chat"
+            target="_blank"
+            style="font-style: none; color: #000"
+          >
+            <div class="kakaotalk-container w-100">
+              <img
+                class="w-100 drop-shadow"
+                src="./assets/media/img/kakaotalk_pc.png"
+                alt=""
+              />
+            </div>
+          </a>
+          <div
+            class="text-light bg-primary mt-3 px-5 py-10"
+            style="
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 4px;
+            "
+          >
+            <div class="fw-bolder fs-5">
+              빠른 전화 문의 <br />
+              <a
+                href="tel:02-2135-9632"
+                style="color: white; text-decoration: none"
+                >02-2135-9632</a
+              >
+            </div>
+            <div class="fw-bolder fs-8 mt-5">
+              월 ~ 토 10~17시 <br />
+              (공휴일 제외)
+            </div>
+          </div>
+        </div>
+        <!-- end:: PC -->
+      </div>
+      <!-- begin:: Mobile -->
+      <div class="kakaotalk mb-10" style="z-index: 999">
+        <a href="http://pf.kakao.com/_EFDTM/chat" target="_blank">
+          <img
+            class="w-100 drop-shadow"
+            src="./assets/media/img/kakaotalk_mobile.png"
+          />
+        </a>
+      </div>
+      <!-- end:: Mobile -->
+      <!--end:: side-sticky -->
+    </main>
+    <!-- end:: main -->
+    <!-- begin:: footer -->
+    <footer>
+      <div
+        class="footer text-white pt-lg-20 pb-lg-20 pt-10 pb-10"
+        style="background-color: #000d60"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="mt-3 fw-bold">
+                고객센터
+                <a
+                  href="tel:02-2135-9632"
+                  style="color: white; text-decoration: none"
+                  >02-2135-9632</a
+                >
+                <span class="fw-normal">(월~토 10~17시, 일/공휴일 미운영)</span
+                ><br />
+                이메일 문의
+                <a
+                  href="mailto:help@supaja.com"
+                  style="color: white; text-decoration: none"
+                  >help@supaja.com</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="mt-3 fw-bold">
+                수파자 주식회사 | 대표이사 이명호 <br />
+                사업자등록번호 : <span class="fw-normal">361-86-01077</span> |
+                통신판매번호 :
+                <span class="fw-normal"
+                  >2018-서울강남-00930
+                  <br />
+                  서울특별시 강남구 강남대로 382, 메리츠타워 17층</span
+                >
+                <br />
+                <a
+                  href="/terms?type=t"
+                  target="_blank"
+                  style="color: white; text-decoration: none"
+                  >이용약관</a
+                >
+                |
+                <a
+                  href="/terms?type=p"
+                  target="_blank"
+                  style="color: white; text-decoration: none"
+                  >개인정보처리방침</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end:: footer -->
+
+    <!-- begin:: common style -->
+    <style>
+      @font-face {
+        font-family: "NanumSquareNeo-Variable";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "NanumSquareNeo-Variable";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+          format("woff2");
+        font-weight: bolder;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "NanumSquareNeo-Variable";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+          format("woff2");
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "NanumSquareNeo-Variable";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+          format("woff2");
+        font-weight: light;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "NanumSquareNeo-Variable";
+        line-height: 1.7;
+      }
+
+      .scrollspy-fixed-top {
+        background-color: #fff;
+        position: sticky;
+        top: 60px;
+        z-index: 3;
+      }
+    </style>
+    <!-- end:: common style -->
+
+    <!--begin::Javascript-->
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="../demo28/src/plugins/global/plugins.bundle.js"></script>
+    <script src="../demo28/dist/assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <script>
+      var hostUrl = "assets/";
+      window.scrollTo({
+        top: 0,
+      });
+
+      const subheaderScrollspy = document.querySelector("#subheader-scrollspy");
+      const DivClassIntro = document.querySelector("#class-intro");
+      const DivClassDetail = document.querySelector("#class-detail");
+      const DivClassTeacher = document.querySelector("#class-teacher");
+      const DivClassPolicy = document.querySelector("#class-policy");
+
+      const DivClassIntroTop =
+        DivClassIntro.getBoundingClientRect().top + window.scrollY;
+      const DivClassDetailTop =
+        DivClassDetail.getBoundingClientRect().top + window.scrollY;
+      const DivClassTeacherTop =
+        DivClassTeacher.getBoundingClientRect().top + window.scrollY;
+      const DivClassPolicyTop =
+        DivClassPolicy.getBoundingClientRect().top + window.scrollY;
+
+      const offset = 100;
+      const navLinks = document.querySelectorAll(
+        "#subheader-scrollspy .nav-link"
+      );
+      const DivClassTopList = [
+        DivClassIntroTop,
+        DivClassDetailTop,
+        DivClassTeacherTop,
+        DivClassPolicyTop,
+      ];
+
+      navLinks.forEach((navLink, i) => {
+        navLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          var targetPosition = DivClassTopList[i] - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        // fixed-top 속성 부여
+        if (
+          window.scrollY >
+          DivClassIntro.getBoundingClientRect().top + offset
+        ) {
+          subheaderScrollspy.classList.add("scrollspy-fixed-top");
+        } else {
+          subheaderScrollspy.classList.remove("scrollspy-fixed-top");
+        }
+
+        console.log(window.scrollY);
+
+        // active 클래스 부여
+        if (window.scrollY <= DivClassTopList[1] - offset) {
+          if (!navLinks[0].classList.contains("active")) {
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove("active");
+            });
+            navLinks[0].classList.add("active");
+          }
+        } else if (window.scrollY <= DivClassTopList[2] - offset) {
+          if (!navLinks[1].classList.contains("active")) {
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove("active");
+            });
+            navLinks[1].classList.add("active");
+          }
+        } else if (window.scrollY <= DivClassTopList[3] - offset) {
+          if (!navLinks[2].classList.contains("active")) {
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove("active");
+            });
+            navLinks[2].classList.add("active");
+          }
+        } else {
+          if (!navLinks[3].classList.contains("active")) {
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove("active");
+            });
+            navLinks[3].classList.add("active");
+          }
+        }
+      });
+    </script>
+    <!--end::Javascript-->
+  </body>
+  <!--end::Body-->
+</html>
